@@ -91,7 +91,7 @@ class Capybara::Driver::Webkit
     end
 
     def connect
-      Timeout.timeout(5) do
+      Timeout.timeout(15) do
         while @socket.nil?
           attempt_connect
         end
